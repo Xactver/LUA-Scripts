@@ -16,7 +16,7 @@ local SelfModules = {
 }
 
 local Assets = {
-    Door = game:GetObjects("rbxassetid://11667740423")[1],
+    Door = LoadCustomInstance("https://github.com/RegularVynixu/Utilities/blob/main/Doors/Door%20Replication/Door.rbxm?raw=true"),
 }
 
 local DoorReplication = {}
