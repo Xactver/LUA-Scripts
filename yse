@@ -189,7 +189,7 @@ local function func(ins)
                                 :Create(
                                     EntityRoot,
                                     TweenInfo.new(1),
-                                    { CFrame = EntityRoot.CFrame * CFrame.new(-15, 30, -20) } -- middle line goes up
+                                    { CFrame = EntityRoot.CFrame * CFrame.new(30, 0, 120) } -- middle line goes up
                                 )
                                 :Play()
                             
