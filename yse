@@ -192,7 +192,7 @@ local function func(ins)
                                     { CFrame = EntityRoot.CFrame * CFrame.new(0, 3, 0) } -- middle line goes up
                                 )
                                 :Play()
-                                wait(2)
+                                wait(1)
                                      game.TweenService
                                 :Create(
                                     EntityRoot,
