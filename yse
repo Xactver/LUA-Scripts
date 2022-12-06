@@ -188,7 +188,7 @@ local function func(ins)
                             game.TweenService
                                 :Create(
                                     EntityRoot,
-                                    TweenInfo.new(2),
+                                    TweenInfo.new(6),
                                     { CFrame = EntityRoot.CFrame * CFrame.new(0, 50, 0) } -- middle line goes up
                                 )
                                 :Play()
