@@ -189,10 +189,17 @@ local function func(ins)
                                 :Create(
                                     EntityRoot,
                                     TweenInfo.new(6),
-                                    { CFrame = EntityRoot.CFrame * CFrame.new(0, 50, 0) } -- middle line goes up
+                                    { CFrame = EntityRoot.CFrame * CFrame.new(0, 20, 0) } -- middle line goes up
                                 )
                                 :Play()
-                            
+                                wait(2)
+                                     game.TweenService
+                                :Create(
+                                    EntityRoot,
+                                    TweenInfo.new(6),
+                                    { CFrame = EntityRoot.CFrame * CFrame.new(0, 30, 0) } -- middle line goes up
+                                )
+                                :Play()
 
                             tweenTime = true
                             task.wait(1.5)
