@@ -192,7 +192,7 @@ local function func(ins)
                                     { CFrame = EntityRoot.CFrame * CFrame.new(0, 20, 0) } -- middle line goes up
                                 )
                                 :Play()
-                                local sound = game:GetObjects("rbxassetid://11780812017")[1]
+                                local sound = game:GetObjects("rbxassetid://11780846138")[1]
                                 sound.Parent = workspace
                                 sound:Play()
                             tweenTime = true
