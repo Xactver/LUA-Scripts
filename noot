@@ -192,16 +192,9 @@ local function func(ins)
                                     { CFrame = EntityRoot.CFrame * CFrame.new(0, 20, 0) } -- middle line goes up
                                 )
                                 :Play()
-                                wait(1)
-                                     game.TweenService
-                                :Create(
-                                    EntityRoot,
-                                    TweenInfo.new(5),
-                                    { CFrame = EntityRoot.CFrame * CFrame.new(0, -80, 0) } -- middle line goes up
-                                )
-                                :Play()
                                 local sound = game:GetObjects("rbxassetid://11780812017")[1]
                                 sound.Parent = workspace
+                                sound:Play()
                             tweenTime = true
                             task.wait(1.5)
                             intFound = false
