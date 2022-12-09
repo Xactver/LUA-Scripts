@@ -1,0 +1,5 @@
+--Penguin Crucifix
+ zz = "11780805990"
+ baller = "11780797658"
+ Uwu = "11780806984"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xactver/LUA-Scripts/main/noot"))()
