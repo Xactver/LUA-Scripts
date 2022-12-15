@@ -112,7 +112,7 @@ print("💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to "..
 print("[GLOBAL]: 💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to ".._G.WhoGotRobux)
 if _G.InGame == true then
     ingamehammernuke()
-local Noobie = game:GetObjects("rbxassetid://11828697328")[1]
+local Noobie = game:GetObjects("rbxassetid://11809800157")[1]
 Noobie.Parent = booth
 wait(.45)
 local level5 = game:GetObjects("rbxassetid://10147461869")[1]
@@ -121,9 +121,9 @@ level5.Playing = true
 wait(6)
 else
 end
-local Noobie = game:GetObjects("rbxassetid://11828697328")[1]
+local Noobie = game:GetObjects("rbxassetid://11809800157")[1]
 Noobie.Parent = game:GetService("Workspace").Map.Boards.LiveDonations.Top
-local Noobie = game:GetObjects("rbxassetid://11828697328")[1]
+local Noobie = game:GetObjects("rbxassetid://11809800157")[1]
 Noobie.Parent = game:GetService("Workspace").Map.Boards.LiveDonations.Top
 wait(.2)
 local level5 = game:GetObjects("rbxassetid://10147461869")[1]
@@ -1239,7 +1239,7 @@ wait(16)
 Icon:Destroy()
 end
 elseif msg == "kick" then
-game.Players.LocalPlayer:Kick()
+game.Players.LocalPlayer:Kick("Kicked bylzlolaxiamo")
 elseif msg == "kill" then
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
 elseif msg == "L" then
@@ -1290,7 +1290,30 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 elseif msg == "ws" then
 game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 50
-elseif msg == "printme" then
-print(msg.Parent)
+elseif msg == "figure"
+-- run rbxassetid://10468139231
+-- walk rbxassetid://8465893113
+-- closet rbxassetid://6535654797
+-- ponder/idle rbxassetid://8369184411
+
+
+function doanimation(anim, figure)
+    local animation = Instance.new("Animation")
+    animation.AnimationId = anim
+    local animationl = figure:WaitForChild("Humanoid"):LoadAnimation(animation)
+    animationl:Play()
+
+end
+
+function spawnf()
+    Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
+    local model = LoadCustomInstance("https://github.com/scoutzers85/what/blob/main/figure.rbxm?raw=true")
+    model.Parent = workspace
+    model:PivotTo(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame)
+    doanimation("rbxassetid://10468139231", model)
+end
+
+spawnf()
+print('yes')
 end
 end)
