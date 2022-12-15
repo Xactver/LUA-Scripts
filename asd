@@ -9,7 +9,7 @@ _G.WhoDonatedID = "4006737289"
 _G.WhoGotRobuxID = game.Players.LocalPlayer.UserId
 _G.Anone = false
 _G.InGame = true
-local boothname = "BasicBooth"
+local boothname = "DiamondBooth"
 
 
 
