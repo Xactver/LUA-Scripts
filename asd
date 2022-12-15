@@ -112,7 +112,7 @@ print("💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to "..
 print("[GLOBAL]: 💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to ".._G.WhoGotRobux)
 if _G.InGame == true then
     ingamehammernuke()
-local Noobie = game:GetObjects("rbxassetid://11828673594")[1]
+local Noobie = game:GetObjects("rbxassetid://11828697328")[1]
 Noobie.Parent = booth
 wait(.45)
 local level5 = game:GetObjects("rbxassetid://10147461869")[1]
@@ -121,9 +121,9 @@ level5.Playing = true
 wait(6)
 else
 end
-local Noobie = game:GetObjects("rbxassetid://11809830937")[1]
+local Noobie = game:GetObjects("rbxassetid://11828697328")[1]
 Noobie.Parent = game:GetService("Workspace").Map.Boards.LiveDonations.Top
-local Noobie = game:GetObjects("rbxassetid://11809830937")[1]
+local Noobie = game:GetObjects("rbxassetid://11828697328")[1]
 Noobie.Parent = game:GetService("Workspace").Map.Boards.LiveDonations.Top
 wait(.2)
 local level5 = game:GetObjects("rbxassetid://10147461869")[1]
