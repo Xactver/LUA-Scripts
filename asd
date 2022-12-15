@@ -1238,7 +1238,6 @@ Icon.IdkWhatIsThis.E:TweenSize(
 wait(16)
 Icon:Destroy()
 end
-end
 elseif msg == "kick" then
 game.Players.LocalPlayer:Kick()
 elseif msg == "kill" then
