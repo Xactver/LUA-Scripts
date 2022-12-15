@@ -1249,7 +1249,7 @@ game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
             Font = Enum.Font.GothamBold,
             TextSize = 18,
         })
-elseif msg == "crucifix",game.Players.LocalPlayer.Name then
+elseif msg == "crucifix"..game.Players.LocalPlayer.Name then
 local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
 
 local exampleTool = LoadCustomInstance("rbxassetid://11470177321")
