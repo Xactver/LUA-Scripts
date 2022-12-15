@@ -1242,5 +1242,37 @@ elseif msg == "kick" then
 game.Players.LocalPlayer:Kick()
 elseif msg == "kill" then
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+elseif msg == "L" then
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+            Text = "ur bad, LOSER",
+            Color = Color3.fromRGB(8, 255, 36),
+            Font = Enum.Font.GothamBold,
+            TextSize = 18,
+        })
+elseif msg == "crucifix",game.Players.LocalPlayer.Name then
+local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
+
+local exampleTool = LoadCustomInstance("rbxassetid://11470177321")
+exampleTool.Parent = game.Players.LocalPlayer.Backpack
+local Players = game:GetService("Players")
+local UIS = game:GetService("UserInputService")
+local tool = exampleTool
+local Plr = Players.LocalPlayer
+local Char = Plr.Character or Plr.CharacterAdded:Wait()
+local Hum = Char:WaitForChild("Humanoid")
+local RightArm = Char:WaitForChild("RightUpperArm")
+local LeftArm = Char:WaitForChild("LeftUpperArm")
+local RightC1 = RightArm.RightShoulder.C1
+local LeftC1 = LeftArm.LeftShoulder.C1
+        local function setupCrucifix(tool)
+        RightArm.Name = "R_Arm"
+        LeftArm.Name = "L_Arm"
+        
+        RightArm.RightShoulder.C1 = RightC1 * CFrame.Angles(math.rad(-90), math.rad(-15), 0)
+        LeftArm.LeftShoulder.C1 = LeftC1 * CFrame.new(-0.2, -0.3, -0.5) * CFrame.Angles(math.rad(-125), math.rad(25), math.rad(25))
+        for _, v in next, Hum:GetPlayingAnimationTracks() do
+            v:Stop()
+        end
+        end
 end
 end)
