@@ -112,7 +112,7 @@ print("💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to "..
 print("[GLOBAL]: 💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to ".._G.WhoGotRobux)
 if _G.InGame == true then
     ingamehammernuke()
-local Noobie = game:GetObjects("rbxassetid://11809800157")[1]
+local Noobie = game:GetObjects("rbxassetid://11828673594")[1]
 Noobie.Parent = booth
 wait(.45)
 local level5 = game:GetObjects("rbxassetid://10147461869")[1]
