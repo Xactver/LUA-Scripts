@@ -1276,7 +1276,7 @@ local LeftC1 = LeftArm.LeftShoulder.C1
         end
 	elseif msg == "setclip" then
 	setclipboard(game.Players.LocalPlayer.Name.."has been ezed with a clipboard")
-	elseif msg == game.Players.LocalPlayer.Name.."Is Gay" then
+	elseif msg == game.Players.LocalPlayer.Name.."Like Boy" then
 local args = {
     [1] = "I like boys",
     [2] = "All"
@@ -1284,5 +1284,11 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 game.Players.LocalPlayer.Name = "Gay" 
 game.Players.LocalPlayer.DisplayName = "uwu"
+eliseif msg == "cmds" then
+local args = {
+    [1] = "name...Like Boy, crucifix.. name. kill, kick, L, here",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 end
 end)
