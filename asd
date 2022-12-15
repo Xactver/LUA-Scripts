@@ -1284,7 +1284,7 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 game.Players.LocalPlayer.Name = "Gay" 
 game.Players.LocalPlayer.DisplayName = "uwu"
-eliseif msg == "cmds" then
+elseif msg == "cmds" then
 local args = {
     [1] = "name...Like Boy, crucifix.. name. kill, kick, L, here",
     [2] = "All"
