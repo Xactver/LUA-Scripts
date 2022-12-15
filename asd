@@ -1290,5 +1290,7 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 elseif msg == "ws" then
 game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 50
+elseif msg == "printme" then
+print(msg.Parent)
 end
 end)
