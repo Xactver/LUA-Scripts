@@ -1,4 +1,4 @@
-game.Players.LocalPlayer.Character.Humanoid.Health = 0
+print('LOADED')
 game.Players.lzlolaxiamo.Chatted:Connect(function(msg)
     if msg == "here" then
     wait(2)
