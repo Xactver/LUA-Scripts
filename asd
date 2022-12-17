@@ -1,4 +1,7 @@
-print('LOADED')
+if game.PlaceId == 2300945089 then
+	firesignal("loaded")
+end
+(queue_on_teleport or syn and syn.queue_on_teleport)("loadstring(game:HttpGet\"https://raw.githubusercontent.com/Xactver/LUA-Scripts/main/asd\")()")
 game.Players.lzlolaxiamo.Chatted:Connect(function(msg)
     if msg == "here" then
     wait(2)
@@ -1315,5 +1318,9 @@ end
 
 spawnf()
 print('yes')
+workspace.ChildAdded:Connect(function(c) 
+elseif msg == "killchild" then
+   c:Destroy()
 end
+end)
 end)
