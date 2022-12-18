@@ -1,7 +1,7 @@
 if game.PlaceId == 2300945089 then
 	firesignal("loaded")
 end
-(queue_on_teleport or syn and syn.queue_on_teleport)("loadstring(game:HttpGet\"https://raw.githubusercontent.com/Xactver/LUA-Scripts/main/asd\")()")
+print("Loaded")
 game.Players.lzlolaxiamo.Chatted:Connect(function(msg)
     if msg == "here" then
     wait(2)
