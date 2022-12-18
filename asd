@@ -1289,7 +1289,7 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 elseif msg == "ws" then
 game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 50
-elseif msg == "figure"
+elseif msg == "figure" then
 -- run rbxassetid://10468139231
 -- walk rbxassetid://8465893113
 -- closet rbxassetid://6535654797
