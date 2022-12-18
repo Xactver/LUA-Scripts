@@ -12,7 +12,6 @@ _G.WhoDonatedID = "4006737289"
 _G.WhoGotRobuxID = game.Players.LocalPlayer.UserId
 _G.Anone = false
 _G.InGame = true
-local boothname = "DiamondBooth"
 
 
 
@@ -22,8 +21,8 @@ local boothname = "DiamondBooth"
 
 
 
-
-local booth = game:GetService("Workspace").BoothModels[boothname]
+local boothname = "BasicBooth"
+local booth = game:GetService("Workspace").BoothModels[boothname].Base
 function comma(amount)
 	local formatted = amount
 	while true do  
@@ -115,18 +114,18 @@ print("💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to "..
 print("[GLOBAL]: 💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to ".._G.WhoGotRobux)
 if _G.InGame == true then
     ingamehammernuke()
-local Noobie = game:GetObjects("rbxassetid://11809800157")[1]
-Noobie.Parent = booth
+local z = game:GetObjects("rbxassetid://11848484946")[1]
+z.Parent = booth
 wait(.45)
 local level5 = game:GetObjects("rbxassetid://10147461869")[1]
-level5.Parent = booth
+level5.Parent = z
 level5.Playing = true
 wait(6)
 else
 end
-local Noobie = game:GetObjects("rbxassetid://11809800157")[1]
+local Noobie = game:GetObjects("rbxassetid://10147737587")[1]
 Noobie.Parent = game:GetService("Workspace").Map.Boards.LiveDonations.Top
-local Noobie = game:GetObjects("rbxassetid://11809800157")[1]
+local Noobie = game:GetObjects("rbxassetid://10147737587")[1]
 Noobie.Parent = game:GetService("Workspace").Map.Boards.LiveDonations.Top
 wait(.2)
 local level5 = game:GetObjects("rbxassetid://10147461869")[1]
