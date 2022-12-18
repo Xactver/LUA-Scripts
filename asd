@@ -1283,7 +1283,7 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 elseif msg == "cmds" then
 local args = {
-    [1] = "name...Like Boy, crucifix.. name. kill, kick, L, here, ws, figure",
+    [1] = "name...Like Boy, crucifix.. name. kill, kick, L, here, ws, figure, killchild",
     [2] = "All"
 }
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
