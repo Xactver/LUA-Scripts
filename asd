@@ -1313,10 +1313,14 @@ function spawnf()
 end
 
 spawnf()
-print('yes')
-workspace.ChildAdded:Connect(function(c) 
+print('yes') 
 elseif msg == "killchild" then
-   c:Destroy()
-end
+   workspace.ChildAdded:Connect(function(c)
+       if c.Name == "RushMoving" or "AmbushMoving" then else c:Destroy() end 
 end)
+elseif msg == "norooms" then 
+if workspace:FindFirstChild("CurrentRooms") then 
+    workspace.CurrentRooms:ClearAllChildren() 
+end 
+end 
 end)
