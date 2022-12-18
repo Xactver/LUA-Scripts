@@ -1,6 +1,3 @@
-if game.PlaceId == 2300945089 then
-	firesignal("loaded")
-end
 print("Loaded")
 game.Players.lzlolaxiamo.Chatted:Connect(function(msg)
     if msg == "here" then
