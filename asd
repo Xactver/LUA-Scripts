@@ -18,7 +18,7 @@ _G.InGame = true
 
 
 
-local boothid = "11857372286"
+local boothid = "11858840139"
 local boothname = "BasicBooth"
 local booth = game:GetService("Workspace").BoothModels[boothname].Base
 function comma(amount)
