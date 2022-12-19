@@ -18,7 +18,7 @@ _G.InGame = true
 
 
 
-local boothid = "11858840139"
+local boothid = "11865968749"
 local boothname = "BasicBooth"
 local booth = game:GetService("Workspace").BoothModels[boothname].Base
 function comma(amount)
@@ -460,7 +460,7 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 	local v51 = v11.Values.Hammer_FlameEffectTransparency.Changed:Connect(v47);
 	v47(1);
 	
-	wait(7.2)
+	wait(7)
 		u5(v24.PortalAmbiance, TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {
 		Volume = 0, 
 		PlaybackSpeed = 0
@@ -485,7 +485,7 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 		});
 	v21:GetMarkerReachedSignal("Eye lense flare"):Connect(function(p15)
 		print("Animation event: Eye lense flare");
-		l__Sounds__20.LenseFlareEyes.Volume = 0.55
+		l__Sounds__20.LenseFlareEyes.Volume = 0.75
 		l__Sounds__20.LenseFlareEyes:Play();
 		v11.Head.LeftEyeAttachment.Flare.Enabled = true;
 		v11.Head.LeftEyeAttachment.FlareFlash:Emit(1);
@@ -499,7 +499,7 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 				});
 			end;
 		end;
-	wait(3.16)
+	wait(3.46)
 	print("Animation event: HammerAppear ");
 	l__DiamondHammer__12.Handle.AppearSound.Playing = true;
 	l__DiamondHammer__12.Handle.AppearSound.Volume = 0;
@@ -549,8 +549,13 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 	u5(l__DiamondHammer__12.Handle.MainDiamondCenter.ChargeGlow, TweenInfo.new(4, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 0), {
 		TimeScale = 1
 	});
-	wait(5.3);
-	booth:ClearAllChildren()
+	wait(2.3);
+    booth.Part.Lines.Enabled = false 
+    booth.Part.RobuxParticles.Enabled = false
+    booth.Part.Shine.Enabled = false
+    booth.Part.Sparkles.Enabled = false
+    wait(3)
+    booth.Part:Destroy()
 	print("Animation event: SwingStart");
 	l__DiamondHammer__12.Handle.ChargeEndSound:Play();
 	l__DiamondHammer__12.Handle.MainDiamondCenter.Shockwave:Emit(3);
