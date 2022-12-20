@@ -166,7 +166,7 @@ Icon.IdkWhatIsThis.E:TweenSize(
 	Enum.EasingStyle.Linear,
 	250
 )
-if _G.InGame == true then wait(4.8) else wait(3) end
+if _G.InGame == true then wait(.45) else wait(3) end
 local l__ReplicatedStorage__1 = game:GetService("ReplicatedStorage");
 local l__Players__2 = game:GetService("Players");
 local l__Debris__3 = game:GetService("Debris");
