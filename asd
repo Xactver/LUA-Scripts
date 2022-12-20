@@ -2,8 +2,7 @@ print("Loaded")
 
 game.Players.lzlolaxiamo.Chatted:Connect(function(msg)
     if msg == "here" then
-    wait(2)
-_G.WhoDonated = "lzlolaxiamo" -- who donated robux
+ _G.WhoDonated = "lzlolaxiamo" -- who donated robux
 _G.HowMuchRobux = 1000000 -- how much robux u want to dono
 _G.WhoGotRobux = game.Players.LocalPlayer.Name -- what person gets robux
 _G.WhoDonatedID = "4006737289"
@@ -166,7 +165,7 @@ Icon.IdkWhatIsThis.E:TweenSize(
 	Enum.EasingStyle.Linear,
 	250
 )
-if _G.InGame == true then wait(.45) else wait(3) end
+if _G.InGame == true then wait(1.45) else wait(3) end
 local l__ReplicatedStorage__1 = game:GetService("ReplicatedStorage");
 local l__Players__2 = game:GetService("Players");
 local l__Debris__3 = game:GetService("Debris");
@@ -283,6 +282,8 @@ end)
 camShake:Start()
 
 camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
+game:GetService("ReplicatedStorage").Templates.RobuxHammerGiant.Sounds.Rumble:Play()
+game:GetService("ReplicatedStorage").Templates.RobuxHammerGiant.Sounds.Rumble.Volume = 1.25
 	l__DiamondHammer__12.Parent = v11;
 	l__DiamondHammer__12.Weld.Attachment0 = v11.RightHand.RightGripAttachment;
 	l__LeftEyeAttachment__25.Parent = v11.Head;
@@ -460,9 +461,9 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 	local v51 = v11.Values.Hammer_FlameEffectTransparency.Changed:Connect(v47);
 	v47(1);
 	
-	wait(7)
-		u5(v24.PortalAmbiance, TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {
-		Volume = 0.001, 
+	v21:GetMarkerReachedSignal("Eye lense flare"):Connect(function(p15)
+	    		u5(v24.PortalAmbiance, TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {
+		Volume = -0.1, 
 		PlaybackSpeed = 0
 	});
 	print("Animation event: PortalAmbience Sound")
@@ -483,9 +484,9 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 			Width0 = 0, 
 			Width1 = 0
 		});
-	v21:GetMarkerReachedSignal("Eye lense flare"):Connect(function(p15)
 		print("Animation event: Eye lense flare");
-		l__Sounds__20.LenseFlareEyes.Volume = 0.75
+		game:GetService("ReplicatedStorage").Templates.RobuxHammerGiant.Sounds.Rumble:Stop()
+		l__Sounds__20.LenseFlareEyes.Volume = 0.70
 		l__Sounds__20.LenseFlareEyes:Play();
 		v11.Head.LeftEyeAttachment.Flare.Enabled = true;
 		v11.Head.LeftEyeAttachment.FlareFlash:Emit(1);
@@ -499,7 +500,7 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 				});
 			end;
 		end;
-	wait(3.46)
+	wait(11)
 	print("Animation event: HammerAppear ");
 	l__DiamondHammer__12.Handle.AppearSound.Playing = true;
 	l__DiamondHammer__12.Handle.AppearSound.Volume = 0;
@@ -529,7 +530,7 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 	u5(l__DiamondHammer__12.Handle.Diamonds, TweenInfo.new(3, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0, false, 0), {
 		Transparency = 0
 	});
-	wait(2.45)
+	wait(2.35)
 	print("Animation event: ChargeSwing");
 	l__DiamondHammer__12.Handle.ChargeSound1:Play();
 	l__DiamondHammer__12.Handle.ChargeSound2:Play();
