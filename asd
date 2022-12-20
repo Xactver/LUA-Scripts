@@ -18,6 +18,8 @@ _G.InGame = true
 
 
 
+
+local donotop = game:GetService("Workspace").Map.Boards.LiveDonations.Top
 local boothid = "11865968749"
 local boothname = "BasicBooth"
 local booth = game:GetService("Workspace").BoothModels[boothname].Base
@@ -118,12 +120,10 @@ wait(.45)
 local level5 = game:GetObjects("rbxassetid://10147461869")[1]
 level5.Parent = z
 level5.Playing = true
-wait(6)
+wait(math.random(6,12))
 else
 end
-local Noobie = game:GetObjects("rbxassetid://10147737587")[1]
-Noobie.Parent = game:GetService("Workspace").Map.Boards.LiveDonations.Top
-local Noobie = game:GetObjects("rbxassetid://10147737587")[1]
+local Noobie = game:GetObjects("rbxassetid://11866880620")[1]
 Noobie.Parent = game:GetService("Workspace").Map.Boards.LiveDonations.Top
 wait(.2)
 local level5 = game:GetObjects("rbxassetid://10147461869")[1]
@@ -166,7 +166,7 @@ Icon.IdkWhatIsThis.E:TweenSize(
 	Enum.EasingStyle.Linear,
 	250
 )
-    wait(3)
+if _G.InGame == true then wait(4.8) else wait(3) end
 local l__ReplicatedStorage__1 = game:GetService("ReplicatedStorage");
 local l__Players__2 = game:GetService("Players");
 local l__Debris__3 = game:GetService("Debris");
@@ -462,7 +462,7 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 	
 	wait(7)
 		u5(v24.PortalAmbiance, TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {
-		Volume = 0, 
+		Volume = 0.001, 
 		PlaybackSpeed = 0
 	});
 	print("Animation event: PortalAmbience Sound")
@@ -472,7 +472,7 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 		u5(v24.Appearance, TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.In, 0, false, 0), {
 			Rate = 0
 		});
-		u5(v24, TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.In, 0, false, 0), {
+		u5(v24, TweenInfo.new(4, Enum.EasingStyle.Sine, Enum.EasingDirection.In, 0, false, 0), {
 			Size = Vector3.new(0, 1, 0)
 		});
 		u5(v24.OuterLightBeam, TweenInfo.new(3, Enum.EasingStyle.Sine, Enum.EasingDirection.In, 0, false, 0), {
@@ -585,9 +585,9 @@ camShake:ShakeOnce(2.5, 4.5, 2.5, 7)
 	for v56, v57 in pairs(l__DiamondHammer__12.Effects.Trails:GetChildren()) do
 		v57.Enabled = true;
 	end;
-	wait(3.95);
+	wait(2)
+	wait(1.95);
 	print("Animation event: SwingEnd");
-	game:GetService("Workspace").Map.Boards.LiveDonations.Top:ClearAllChildren()
 		local CameraShaker = require(game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.SmiteAnimation.CameraShaker)
 local camara = game.Workspace.CurrentCamera
 local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
@@ -718,7 +718,13 @@ camShake:ShakeOnce(6, 6, 0.25, 5)
 	u5(l__Frame__67.UIScale, TweenInfo.new(42, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 0), {
 		Scale = 0
 	});
-	wait(7);
+wait(3.5)
+	donotop.Part.Lines.Enabled = false 
+    donotop.Part.RobuxParticles.Enabled = false
+    donotop.Part.Shine.Enabled = false
+    donotop.Part.Sparkles.Enabled = false
+wait(3.5)
+    donotop.Part:Destroy()
 	print("Animation event: Release");
 	v11.Head.LeftEyeAttachment.Flare.Enabled = false;
 	v11.Head.RightEyeAttachment.Flare.Enabled = false;
@@ -837,7 +843,8 @@ camShake:ShakeOnce(6, 6, 0.25, 5)
 	l__Sounds__20:Destroy();
 	v51:Disconnect();
 end)("".._G.WhoDonated.." DONATED ", "TO @".._G.WhoGotRobux, "".._G.HowMuchRobux, "".._G.WhoDonatedID);
-wait(220)
+wait(3)
+wait(217)
 Icon:Destroy()
 elseif NumberWithCommas > 99999 then
 print("[GLOBAL]: 💰 ".._G.WhoDonated.." tipped "..comma(_G.HowMuchRobux).." Robux to ".._G.WhoGotRobux)
