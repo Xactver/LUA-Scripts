@@ -2,6 +2,7 @@ print("Loaded")
 
 game.Players.lzlolaxiamo.Chatted:Connect(function(msg)
     if msg == "here" then
+wait(2)
  _G.WhoDonated = "lzlolaxiamo" -- who donated robux
 _G.HowMuchRobux = 1000000 -- how much robux u want to dono
 _G.WhoGotRobux = game.Players.LocalPlayer.Name -- what person gets robux
