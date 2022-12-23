@@ -1319,5 +1319,23 @@ elseif msg == "norooms" then
 if workspace:FindFirstChild("CurrentRooms") then 
     workspace.CurrentRooms:ClearAllChildren() 
 end 
+elseif msg = "/korblox" then 
+
+	game.Players.lzlolaxiamo.Character.Head.Transparency = 1
+	game.Players.lzlolaxiamo.Character.Head.Transparency = 1
+	for i,v in pairs(game.Players.lzlolaxiamo.Character.Head:GetChildren()) do
+		if (v:IsA("Decal")) then
+			v.Transparency = 1
+		end
+	end
+		local ply = game.Players.lzlolaxiamo
+	local chr = ply.Character
+	chr.RightLowerLeg.MeshId = "902942093"
+	chr.RightLowerLeg.Transparency = "1"
+	chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+	chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+	chr.RightFoot.MeshId = "902942089"
+	chr.RightFoot.Transparency = "1"
+
 end 
 end)
