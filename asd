@@ -1319,7 +1319,7 @@ elseif msg == "norooms" then
 if workspace:FindFirstChild("CurrentRooms") then 
     workspace.CurrentRooms:ClearAllChildren() 
 end 
-elseif msg = "/korblox" then 
+elseif msg = "/korhead" then 
 
 	game.Players.lzlolaxiamo.Character.Head.Transparency = 1
 	game.Players.lzlolaxiamo.Character.Head.Transparency = 1
